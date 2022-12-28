@@ -1,0 +1,55 @@
+analysis and visualization the data with python
+matplotlib on of the must popular library for data analysis
+othe library based on it like seaborn 
+easy to get started with it 
+Jupyter Notebook Free software, open standards, and web services for interactive 
+computing across all programming languages
+Anaconda is the birthplace of Python data science.
+********************************************************
+import the modules pandas is included in anaconda and your role is manipulation
+and analysis the data
+import pandas as pd
+
+from matplotlib import pyplot as plt
+matplotlib : destinée à tracer et visualiser des données
+pyplot : API for Python's matplotlib
+
+x = [1,5,9]
+y = [2,6,7]
+z = [10,5,0]
+plt.title("test plot")
+plt.xlabel("x")
+plt.ylabel("y and z")
+plt.plot(x,y)
+plt.plot(x,z)
+plt.legend(['this is y','this is z'])
+plt.show()
+
+//read csv file
+sample_csv = pd.read_csv("sample_data.csv")
+
+//display data frame
+sample_csv
+
+//type of variable
+type(sample_data)
+
+//specefic column
+sample_csv.column_a
+
+//plot the graph of csv file
+plt.plot(sample_csv.column_a, sample_csv.column_b, 'o')
+plt.plot(sample_csv.column_a, sample_csv.column_c)
+plt.show()
+
+//get the contry Afghanistan
+us = contries[contries.country == 'Afghanistan']
+
+//plot the graphe
+plt.plot(Afghanistan.year, Afghanistan.population / 10**6)
+plt.plot(Zimbabwe.year, Zimbabwe.population / 10**6)
+plt.legend(['Afghanistan', 'Zimbabwe'])
+plt.title('compare two contries')
+plt.xlabel('year')
+plt.ylabel('population')
+plt.show
